@@ -1,0 +1,1672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Garfield Bake House</title>
+
+    <link rel="stylesheet" href="page_d.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<style>@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #171717;
+    background: #ffffff;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+button {
+    font-family: inherit;
+}
+
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    min-height: 550px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.05)
+        ),
+        url("image/112.png");
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    color: white;
+}
+
+
+/* HEADER */
+
+.header {
+    width: 88%;
+    max-width: 1150px;
+
+    height: 100px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 110px;
+}
+
+
+.logo img {
+    width: 85px;
+}
+
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+
+    gap: 32px;
+}
+
+
+.nav-menu a {
+    color: #f4f4f4;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+
+.nav-menu a.active,
+.nav-menu a:hover {
+    color: #d9a56c;
+}
+
+
+
+/* HERO CONTENT */
+
+.hero-content {
+    width: 88%;
+    max-width: 1150px;
+
+    margin: 80px auto 0;
+}
+
+
+.small-title {
+    color: #e0aa72;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    margin-bottom: 5px;
+}
+
+
+.hero-content h1 {
+    font-family: "Lobster", cursive;
+
+    font-size: 58px;
+    line-height: 1.22;
+
+    font-weight: 400;
+
+    margin-bottom: 65px;
+}
+
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.btn-primary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 130px;
+    height: 45px;
+
+    padding: 0 25px;
+
+    color: white;
+    background: #ad3e20;
+
+    border-radius: 4px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.btn-primary:hover {
+    background: #8e2f17;
+
+    transform: translateY(-2px);
+}
+
+
+.btn-link {
+    color: #e6ba8a;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+/* =====================================================
+   SECTION HEADINGS
+===================================================== */
+
+.section-heading {
+    text-align: center;
+
+    font-family: "Lobster", cursive;
+
+    font-size: 47px;
+
+    font-weight: 400;
+
+    margin-bottom: 60px;
+}
+
+
+
+/* =====================================================
+   TOP PRODUCTS
+===================================================== */
+
+.products-section {
+    padding: 75px 6% 105px;
+}
+
+
+.product-grid {
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+.product-card {
+    min-height: 278px;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+        ),
+        #151515;
+
+    position: relative;
+}
+
+
+.product-card > img {
+    width: 100%;
+
+    height: 165px;
+
+    object-fit: contain;
+
+    padding: 12px 25px 0;
+}
+
+
+.product-info {
+    padding: 0 20px 20px;
+}
+
+
+.price-row {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+
+.price {
+    font-size: 17px;
+}
+
+
+.info-icon {
+    width: 27px;
+    height: 27px;
+
+    border: 1px solid white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: serif;
+}
+
+
+.product-bottom {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.product-bottom h3 {
+    font-size: 17px;
+    line-height: 1.2;
+
+    font-weight: 400;
+}
+
+
+.product-bottom button {
+    border: 0;
+
+    background: #ad3e20;
+    color: white;
+
+    padding: 7px 11px;
+
+    border-radius: 3px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+.product-bottom button:hover {
+    background: #8e2f17;
+}
+
+
+
+/* =====================================================
+   PROMOTION
+===================================================== */
+
+.promotion {
+    min-height: 335px;
+
+    background:
+        url("image/group 497.png")
+        center / cover no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.promotion-content h2 {
+    font-family: "Lobster", cursive;
+
+    color: #a83d21;
+
+    font-size: 35px;
+    line-height: 1.15;
+
+    margin-bottom: 18px;
+}
+
+
+.promotion-content p {
+    color: #666;
+
+    line-height: 1.25;
+
+    margin-bottom: 25px;
+}
+
+
+
+/* =====================================================
+   EXPLORE
+===================================================== */
+
+.explore-section {
+    padding: 75px 6% 100px;
+}
+
+
+.category-menu {
+    max-width: 820px;
+
+    margin: -10px auto 55px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+.category {
+    border: none;
+
+    padding: 0 0 8px;
+
+    background: transparent;
+
+    color: #666;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.category.active {
+    color: #555;
+
+    border-bottom: 4px solid #a33d22;
+}
+
+
+.category:hover {
+    color: #a33d22;
+}
+
+
+.explore-grid {
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+.explore-grid img {
+    width: 100%;
+
+    height: 235px;
+
+    object-fit: cover;
+
+    border-radius: 4px;
+
+    transition: 0.3s;
+}
+
+
+.explore-grid img:hover {
+    transform: scale(1.02);
+}
+
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about-section {
+    min-height: 305px;
+
+    background:
+        url("image/group 498.png")
+        center / cover no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    text-align: center;
+}
+
+
+.about-content h2 {
+    font-family: "Lobster", cursive;
+
+    font-size: 37px;
+
+    margin-bottom: 18px;
+}
+
+
+.about-content p {
+    color: #d0d0d0;
+
+    line-height: 1.35;
+
+    margin-bottom: 25px;
+}
+
+
+
+/* =====================================================
+   FEATURED TREATS
+===================================================== */
+
+.featured-section {
+    padding: 75px 6% 100px;
+}
+
+
+.featured-grid {
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+.featured-item img {
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: cover;
+
+    border-radius: 4px;
+}
+
+
+.featured-details {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 10px;
+}
+
+
+.featured-details h3,
+.featured-details span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("image/group 509.png")
+        center / cover no-repeat;
+
+    color: white;
+
+    padding: 40px 8% 35px;
+}
+
+
+.footer-top {
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer-logo {
+    width: 105px;
+}
+
+
+.follow-us {
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+}
+
+
+.follow-us h3 {
+    color: #e1b17d;
+
+    font-size: 21px;
+}
+
+
+.social-icons {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.social-icons a {
+    color: #e8b678;
+
+    font-size: 39px;
+
+    transition: 0.3s;
+}
+
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    color: white;
+}
+
+
+.footer-line {
+    max-width: 1120px;
+
+    height: 1px;
+
+    background: rgba(222, 177, 123, 0.35);
+
+    margin: 25px auto 35px;
+}
+
+
+.footer-content {
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1.2fr;
+
+    gap: 80px;
+}
+
+
+.footer-column h2 {
+    color: #e7b77f;
+
+    font-size: 31px;
+
+    margin-bottom: 17px;
+}
+
+
+.footer-column p,
+.footer-column > a {
+    display: block;
+
+    color: white;
+
+    font-size: 19px;
+    font-weight: 500;
+
+    margin-bottom: 8px;
+}
+
+
+.footer-column > a:hover {
+    color: #e7b77f;
+}
+
+
+.news-item {
+    display: flex;
+
+    gap: 22px;
+
+    margin-bottom: 20px;
+}
+
+
+.news-item img {
+    width: 100px;
+    height: 67px;
+
+    object-fit: cover;
+}
+
+
+.news-item span {
+    color: #e7b77f;
+
+    font-size: 15px;
+}
+
+
+.news-item p {
+    margin: 1px 0 0;
+
+    font-size: 18px;
+}
+
+
+.copyright {
+    text-align: center;
+
+    color: #888;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    margin-top: 65px;
+}
+
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media screen and (max-width: 900px) {
+
+    .header {
+        gap: 60px;
+    }
+
+
+    .product-grid,
+    .explore-grid,
+    .featured-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .footer-content {
+        gap: 35px;
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media screen and (max-width: 700px) {
+
+    .hero {
+        min-height: 600px;
+
+        background-position: 65% center;
+    }
+
+
+    .header {
+        width: 90%;
+
+        height: auto;
+
+        padding: 20px 0;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+
+    .nav-menu {
+        flex-wrap: wrap;
+
+        gap: 18px;
+    }
+
+
+    .hero-content {
+        width: 90%;
+
+        margin-top: 90px;
+    }
+
+
+    .hero-content h1 {
+        font-size: 47px;
+    }
+
+
+    .section-heading {
+        font-size: 40px;
+    }
+
+
+    .product-grid,
+    .explore-grid,
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .product-card {
+        max-width: 430px;
+
+        width: 100%;
+
+        margin: 0 auto;
+    }
+
+
+    .category-menu {
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        gap: 25px;
+    }
+
+
+    .category {
+        white-space: nowrap;
+    }
+
+
+    .explore-grid img {
+        height: 280px;
+    }
+
+
+    .featured-item {
+        max-width: 430px;
+
+        width: 100%;
+
+        margin: 0 auto;
+    }
+
+
+    .footer-top {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 30px;
+    }
+
+
+    .follow-us {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+
+    .footer-content {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .copyright {
+        margin-top: 45px;
+
+        font-size: 14px;
+    }
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media screen and (max-width: 430px) {
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+
+
+    .section-heading {
+        font-size: 36px;
+    }
+
+
+    .promotion-content h2 {
+        font-size: 31px;
+    }
+
+
+    .social-icons {
+        gap: 18px;
+    }
+
+
+    .social-icons a {
+        font-size: 32px;
+    }
+
+}</style>
+
+<body>
+
+
+    <!-- =================================================
+         HERO
+    ================================================== -->
+    <section class="hero">
+
+        <header class="header">
+
+            <div class="logo">
+                <img src="image/111.png" alt="Garfield Logo">
+            </div>
+
+
+            <nav class="nav-menu">
+
+                <a href="#home" class="active">
+                    Home
+                </a>
+
+                <a href="#blog">
+                    Blog
+                </a>
+
+                <a href="#contact">
+                    Contact Us
+                </a>
+
+                <a href="#services">
+                    Services
+                </a>
+
+            </nav>
+
+        </header>
+
+
+        <div class="hero-content" id="home">
+
+            <p class="small-title">
+                Delicious Cafe
+            </p>
+
+            <h1>
+                Sweet Treats,<br>
+                Perfect Eats
+            </h1>
+
+
+            <div class="hero-buttons">
+
+                <a href="#products" class="btn-primary">
+                    Shop Now
+                </a>
+
+                <a href="#explore" class="btn-link">
+                    Learn More
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         TOP PRODUCTS
+    ================================================== -->
+    <section class="products-section" id="products">
+
+        <h2 class="section-heading">
+            Top Products
+        </h2>
+
+
+        <div class="product-grid">
+
+
+            <!-- PRODUCT 1 -->
+            <div class="product-card">
+
+                <img
+                    src="image/Group 489.png"
+                    alt="Whole Grain Bread"
+                >
+
+                <div class="product-info">
+
+                    <div class="price-row">
+
+                        <span class="price">
+                            40 Baht
+                        </span>
+
+                        <span class="info-icon">
+                            i
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-bottom">
+
+                        <h3>
+                            Whole Grain<br>
+                            Bread
+                        </h3>
+
+                        <button>
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 2 -->
+            <div class="product-card">
+
+                <img
+                    src="image/Group 490.png"
+                    alt="Whole Grain Bread"
+                >
+
+                <div class="product-info">
+
+                    <div class="price-row">
+
+                        <span class="price">
+                            40 Baht
+                        </span>
+
+                        <span class="info-icon">
+                            i
+                        </span>
+
+                    </div>
+
+                    <div class="product-bottom">
+
+                        <h3>
+                            Whole Grain<br>
+                            Bread
+                        </h3>
+
+                        <button>
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 3 -->
+            <div class="product-card">
+
+                <img
+                    src="image/Group 491.png"
+                    alt="Whole Grain Bread"
+                >
+
+                <div class="product-info">
+
+                    <div class="price-row">
+
+                        <span class="price">
+                            40 Baht
+                        </span>
+
+                        <span class="info-icon">
+                            i
+                        </span>
+
+                    </div>
+
+                    <div class="product-bottom">
+
+                        <h3>
+                            Whole Grain<br>
+                            Bread
+                        </h3>
+
+                        <button>
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 4 -->
+            <div class="product-card">
+
+                <img
+                    src="image/Group 492.png"
+                    alt="Whole Grain Bread"
+                >
+
+                <div class="product-info">
+
+                    <div class="price-row">
+
+                        <span class="price">
+                            40 Baht
+                        </span>
+
+                        <span class="info-icon">
+                            i
+                        </span>
+
+                    </div>
+
+                    <div class="product-bottom">
+
+                        <h3>
+                            Whole Grain<br>
+                            Bread
+                        </h3>
+
+                        <button>
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 5 -->
+            <div class="product-card">
+
+                <img
+                    src="image/Group 493.png"
+                    alt="Whole Grain Bread"
+                >
+
+                <div class="product-info">
+
+                    <div class="price-row">
+
+                        <span class="price">
+                            40 Baht
+                        </span>
+
+                        <span class="info-icon">
+                            i
+                        </span>
+
+                    </div>
+
+                    <div class="product-bottom">
+
+                        <h3>
+                            Whole Grain<br>
+                            Bread
+                        </h3>
+
+                        <button>
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 6 -->
+            <div class="product-card">
+
+                <img
+                    src="image/Group 494.png"
+                    alt="Whole Grain Bread"
+                >
+
+                <div class="product-info">
+
+                    <div class="price-row">
+
+                        <span class="price">
+                            40 Baht
+                        </span>
+
+                        <span class="info-icon">
+                            i
+                        </span>
+
+                    </div>
+
+                    <div class="product-bottom">
+
+                        <h3>
+                            Whole Grain<br>
+                            Bread
+                        </h3>
+
+                        <button>
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         PROMOTION
+    ================================================== -->
+    <section class="promotion">
+
+        <div class="promotion-content">
+
+            <h2>
+                20% Off Your<br>
+                First Order
+            </h2>
+
+
+            <p>
+                Lorem ipsum dolor sit amet<br>
+                consectetur adipiscing elit.<br>
+                Nesciunt rem.
+            </p>
+
+
+            <a href="#" class="btn-primary">
+                Learn More
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         EXPLORE MORE
+    ================================================== -->
+    <section class="explore-section" id="explore">
+
+        <h2 class="section-heading">
+            Explore More
+        </h2>
+
+
+        <div class="category-menu">
+
+            <button class="category active">
+                Cake
+            </button>
+
+            <button class="category">
+                Muffins
+            </button>
+
+            <button class="category">
+                Croissant
+            </button>
+
+            <button class="category">
+                Bread
+            </button>
+
+            <button class="category">
+                Tart
+            </button>
+
+            <button class="category">
+                Favorite
+            </button>
+
+        </div>
+
+
+        <div class="explore-grid">
+
+            <img
+                src="image/Rectangle 20.png"
+                alt="Muffin"
+            >
+
+            <img
+                src="image/Rectangle 21.png"
+                alt="Berry Cake"
+            >
+
+            <img
+                src="image/rectangle 22.png"
+                alt="Fruit Cake"
+            >
+
+            <img
+                src="image/Rectangle 23.png"
+                alt="Cake"
+            >
+
+            <img
+                src="image/rectangle 24.png"
+                alt="Chocolate Cake"
+            >
+
+            <img
+                src="image/rectangle 25.png"
+                alt="Cupcake"
+            >
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         ABOUT
+    ================================================== -->
+    <section class="about-section">
+
+        <div class="about-content">
+
+            <h2>
+                About us
+            </h2>
+
+
+            <p>
+                Lorem ipsum dolor sit amet<br>
+                consectetur adipiscing elit.<br>
+                Nesciunt rem odit labore unde<br>
+                nemo omnis sequi.
+            </p>
+
+
+            <a href="#" class="btn-primary">
+                Read More
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         FEATURED TREATS
+    ================================================== -->
+    <section class="featured-section">
+
+        <h2 class="section-heading">
+            Featured Treats
+        </h2>
+
+
+        <div class="featured-grid">
+
+
+            <div class="featured-item">
+
+                <img
+                    src="image/Rectangle 153.png"
+                    alt="Puff Pastry"
+                >
+
+                <div class="featured-details">
+
+                    <h3>
+                        Puff Pastry
+                    </h3>
+
+                    <span>
+                        8 Baht
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="featured-item">
+
+                <img
+                    src="image/Rectangle 154.png"
+                    alt="Doughnuts"
+                >
+
+                <div class="featured-details">
+
+                    <h3>
+                        Doughnuts
+                    </h3>
+
+                    <span>
+                        8 Baht
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="featured-item">
+
+                <img
+                    src="image/Rectangle 156.png"
+                    alt="Brownies"
+                >
+
+                <div class="featured-details">
+
+                    <h3>
+                        Brownies
+                    </h3>
+
+                    <span>
+                        8 Baht
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+    <footer class="footer" id="contact">
+
+
+        <!-- TOP -->
+        <div class="footer-top">
+
+            <img
+                src="image/111.png"
+                alt="Keithston"
+                class="footer-logo"
+            >
+
+
+            <div class="follow-us">
+
+                <h3>
+                    Follow us
+                </h3>
+
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-line"></div>
+
+
+        <!-- MIDDLE -->
+        <div class="footer-content">
+
+
+            <!-- ABOUT -->
+            <div class="footer-column">
+
+                <h2>
+                    About Us
+                </h2>
+
+
+                <p>
+                    (02) 807-4500
+                </p>
+
+                <p>
+                    info@sau.ac.th
+                </p>
+
+                <p>
+                    19/1 Phetkasem Road
+                </p>
+
+                <p>
+                    Nongkham Bangkok
+                </p>
+
+                <p>
+                    10160
+                </p>
+
+            </div>
+
+
+
+            <!-- EXPLORE -->
+            <div class="footer-column">
+
+                <h2>
+                    Explore
+                </h2>
+
+
+                <a href="#">
+                    Home
+                </a>
+
+                <a href="#">
+                    Blog
+                </a>
+
+                <a href="#">
+                    Contact us
+                </a>
+
+                <a href="#">
+                    Services
+                </a>
+
+            </div>
+
+
+
+            <!-- RECENT NEWS -->
+            <div class="footer-column news-column">
+
+                <h2>
+                    Recent News
+                </h2>
+
+
+                <div class="news-item">
+
+                    <img
+                        src="image/55.png"
+                        alt="Recent News"
+                    >
+
+                    <div>
+
+                        <span>
+                            June 14,2025
+                        </span>
+
+                        <p>
+                            Puff pastry bliss.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="news-item">
+
+                    <img
+                        src="image/66.png"
+                        alt="Recent News"
+                    >
+
+                    <div>
+
+                        <span>
+                            June 14,2025
+                        </span>
+
+                        <p>
+                            Puff pastry bliss.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2025 Bake House. All rights reserved
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
